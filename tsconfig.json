@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "ES6",               // Specifies the target ECMAScript version
+		"module": "ES6",               // Use ES6 modules for import/export
+		"outDir": "./dist",            // Output directory for compiled files
+		"rootDir": "./src",            // Root directory of source files
+		"strict": true,                // Enable strict type checking
+		"esModuleInterop": true,       // Allow default imports from CommonJS modules
+		"forceConsistentCasingInFileNames": true, // Ensure file name casing consistency
+		"moduleResolution": "node",   // Resolve modules like Node.js
+		"skipLibCheck": true           // Skip type checking of declaration files
+	},
+	"include": ["./src/"],            // Include all TypeScript files in `src/`
+	"exclude": ["node_modules"]       // Exclude `node_modules`
+}
