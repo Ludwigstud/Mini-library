@@ -7,7 +7,7 @@ Examination for Typescript course
 ## Requirements
 
 - Listing all books from API
-- Show info when clicking on a books
+- Show info when clicking on books
 - Done in Typescript
 - Dist and src maps
 - Using static types and interfaces
