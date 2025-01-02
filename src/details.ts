@@ -1,5 +1,7 @@
 import { Book } from "./Interfaces.js";
 
+const detailsDiv = document.querySelector(".details") as HTMLElement;
+
 export function displayBookDetails(book: Book) {
 	const detailsDiv = document.querySelector(".details") as HTMLElement;
 	detailsDiv.style.visibility = "visible";
@@ -11,5 +13,17 @@ export function displayBookDetails(book: Book) {
         <p><strong>Pages:</strong> ${book.pages || "N/A"}</p>
         <p><strong>Plot:</strong> ${book.plot}</p>
         <p><strong>Audience:</strong> ${book.audience}</p>
+        <button class="return-button">Return</button>
     `;
+
+    const returnButton = detailsDiv.querySelector(".return-button") as HTMLButtonElement;
+    returnButton.addEventListener("click", () => {
+      closeDetails();
+    });
+    
 }
+
+function closeDetails() {
+    detailsDiv.style.visibility = "hidden";
+    detailsDiv.innerHTML = ""; 
+  }

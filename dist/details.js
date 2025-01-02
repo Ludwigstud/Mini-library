@@ -1,3 +1,4 @@
+const detailsDiv = document.querySelector(".details");
 export function displayBookDetails(book) {
     const detailsDiv = document.querySelector(".details");
     detailsDiv.style.visibility = "visible";
@@ -9,5 +10,14 @@ export function displayBookDetails(book) {
         <p><strong>Pages:</strong> ${book.pages || "N/A"}</p>
         <p><strong>Plot:</strong> ${book.plot}</p>
         <p><strong>Audience:</strong> ${book.audience}</p>
+        <button class="return-button">Return</button>
     `;
+    const returnButton = detailsDiv.querySelector(".return-button");
+    returnButton.addEventListener("click", () => {
+        closeDetails();
+    });
+}
+function closeDetails() {
+    detailsDiv.style.visibility = "hidden";
+    detailsDiv.innerHTML = "";
 }

@@ -38,3 +38,4 @@ export function setupSearch() {
 		renderBooks(query);
 	});
 }
+

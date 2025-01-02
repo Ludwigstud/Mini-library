@@ -25,6 +25,7 @@ body {
 	gap: 10px;
 	background-color: rgb(152, 170, 170);
 	border-radius: 25px;
+	max-width: 850px;
 }
 .book {
 	padding: 10px;
@@ -45,16 +46,29 @@ body {
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .details {
+	position: relative;
+	background-color: white;
 	visibility: hidden;
-	max-width: 60%;
+	max-width: 850px;
 	margin-top: 20px;
 	padding: 20px;
 	border: 1px solid #ddd;
 	border-radius: 8px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	margin: 20px;
 }
 
 #search {
 	min-height: 30px;
 	text-align: center;
+	margin-bottom: 20px;
+}
+
+.return-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 5px;
+	width: 100px;
+	height: 40px;
 }
